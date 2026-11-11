@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background-image: url(https://abrakadabra.fun/uploads/posts/2022-02/1645096294_21-abrakadabra-fun-p-temnii-fon-dlya-chata-28.jpg);
+}
+
+#header, #footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-bottom: 2px solid rgb(0, 20, 45);
+    background: #1e293b;
+    color: #f8fafc59;
+    line-height: 50px;
+    margin-bottom: 5px;
+    float: left;
+    z-index: 10;
+    position: relative;
+}
+
+#main{
+    width: 50%;
+    margin-left: 8%;
+    background: #0f172a;
+    border: 1px solid rgb(17, 0, 60);
+    padding: 20px 2.5%;
+    float: left;
+}
+
+#aside{
+    width: 25%;
+    height: 100%;
+    padding: 20px 2.5%;
+    background: #0f172a;
+    border: 1px solid rgb(17, 0, 60);
+    margin-left: 5%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+#tab{
+    border-collapse: collapse;
+    color: #5881bbdb;
+    margin-top: 50px;
+    width: 100%;
+}
+
+#tab th, #tab td{
+    border: 1px solid #5881bb50;
+    padding: 8px 4px;
+    text-align: center;
+}
+
+
+#reset_table:active{
+    border-radius: 5px;
+    background-color: #424780;
+    border: 2px double #8bbbff;
+}
+#reset_table {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #53698a;
+    border: 2px solid #5881bb;
+    color: #01122adb;
+    border-radius: 3px
+}
+
+span{
+    display: inline-block;
+    padding-top: 10px;
+    color: #bb5858db;
+}
+
+#dan_r{
+    color: #0b8f21;
+}
+
+#contact{
+    list-style: none;
+    display: block;
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;   
+}
+
+#contact li{
+    display: inline;
+    cursor: pointer;
+}
+
+#contact li a{
+    color: #f8fafc59;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#contact li a:hover{
+    color: #426ba49a;
+    border-radius: 5%;
+}
+
+#contact li:not(:last-of-type){
+    margin-right: 40px;
+}
+
+#checkboxes{
+    color: #5881bbdb;
+}
+
+#checkboxes label:not(:last-of-type){
+    margin-right: 15px;
+}
+
+#checkboxes input[type = "checkbox"]{
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #53698a;
+    border: 1px solid #5881bb;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+#checkboxes input[type="checkbox"]:checked::before{
+    content: "✓";
+    color: #000d9b;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52%);
+}
+
+#texts{
+    color: #5881bbdb;
+    margin-top: 10px;
+}
+
+#texts label{
+    margin-right: 17px;
+}
+
+#texts input[type="text"]{
+    background-color: #53698a;
+    border: 1px solid #5881bb;
+    border-radius: 3px;
+    width: 390px;
+}
+
+#texts input::placeholder{
+    color: #01122adb;
+    padding-left: 5px;
+}
+
+#texts input[type="text"]:focus{
+    border-radius: 9px;
+    border: 1px solid #334286;
+    outline: none
+}
+
+#but{
+    color: #5881bbdb;
+    margin-top: 10px;
+}
+
+#but input[type="button"]{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 2px solid #5881bb;
+    background: #53698a;
+    color: #01122adb;
+}
+
+#but input[type="button"]:first-of-type{
+    margin-left: 16px;
+}
+
+#but input[type="button"]:active{
+    border-radius: 5px;
+    background-color: #424780;
+    border: 2px double #8bbbff;
+}
+
+#but1 {
+    margin-top: 10px;
+    text-align: center
+}
+
+#but1 input[type]{
+    background-color: #53698a;
+    border: 2px solid #5881bb;
+    color: #01122adb;
+    border-radius: 3px;
+}
+
+#but1 input[type="reset"]:active{
+    border-radius: 5px;
+    background-color: #424780;
+    border: 2px double #8bbbff;
+}
+
+#but1 input[type="submit"]:focus{
+    border-radius: 5px;
+    background-color: #424780;
+    border: 2px double #8bbbff;
+}
+
+#footer{
+    background: #020617;
+    margin-bottom: 0;
+    margin-top: 30px;
+    border-bottom: 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+#canvas{
+    margin-top: 20px;
+}

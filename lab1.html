@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_web_1</title>
+    <link rel="stylesheet" href="lab1.css">
+    <style>canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"> 
+        Карецкая Алиса Борисовна Р3210 Вариант №12659
+    </div>
+
+    <div id="main">
+        <form id="main_form" onsubmit="return checkForm(this)" method="post">
+            <div id="checkboxes">
+                <label>X:</label>
+                <label><input type="checkbox" name="X" value="-5"> -5</label>
+                <label><input type="checkbox" name="X" value="-4"> -4</label>
+                <label><input type="checkbox" name="X" value="-3"> -3</label>
+                <label><input type="checkbox" name="X" value="-2"> -2</label>
+                <label><input type="checkbox" name="X" value="-1"> -1</label>
+                <label><input type="checkbox" name="X" value="0"> 0</label>
+                <label><input type="checkbox" name="X" value="1"> 1</label>
+                <label><input type="checkbox" name="X" value="2"> 2</label>
+                <label><input type="checkbox" name="X" value="3"> 3</label>
+            </div>
+            <span id="error_x"></span>
+            <div id="texts">
+                <label for="Y">Y:</label>
+                <input type="text" placeholder="Введите значение Y (-5,3)" id="Y" name="Y">
+            </div>
+            <span id="error_y"></span>
+            <div id="but">
+                <label>R:</label>
+                <input type="hidden" id="znach"  value="">
+                <input type="button" name="R"  value="1">
+                <input type="button" name="R" value="2">
+                <input type="button" name="R" value="3">
+                <input type="button" name="R" value="4">
+                <input type="button" name="R" value="5">
+            </div>
+            <span id="dan_r"></span> <br>
+            <span id="error_r"></span>
+            <div id="but1">
+                <input type="submit" name="submit" value="Отправить">
+                <input type="reset" value="Очистить">
+            </div>
+            <canvas id="canvas" width="300" height="300" ></canvas> <br>
+            <form method="post"></form> 
+        </form>
+
+
+
+    </div>
+
+    <div id="aside">
+        <table id="tab" border="1">
+            <thead>
+                <tr>
+                    <th>X</th> 
+                    <th>Y</th> 
+                    <th>R</th>
+                    <th>result</th> 
+                    <th>Date</th> 
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+            </tbody>
+            <tfoot>
+            </tfoot>
+
+
+
+
+        </table>
+        <input type="reset" id="reset_table" value="Очистить">
+    </div>
+
+    <div id="footer">
+        <ul id="contact">
+            <li><a href="https://t.me/liss_allis">Telegram</a></li>
+            <li><a href="https://vk.ru/a.miller2007">Vk</a></li>
+            <li><a href="mailto:alisa.miller.07@bk.ru">Mail</a></li>
+        </ul>
+    </div>
+
+
+    <div style="height: 2000px; background: linear-gradient(transparent, #334155);"></div>
+
+    <script src="lab1.js"></script>
+</body>
+</html>
